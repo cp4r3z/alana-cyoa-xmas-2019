@@ -1,0 +1,22 @@
+body {
+    background-color: #31333D;
+}
+
+h1 {
+    color: white;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.cyoa-link {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cyoa-link a {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
