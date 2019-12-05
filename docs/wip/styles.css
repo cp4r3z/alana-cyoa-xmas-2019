@@ -6,13 +6,17 @@ h1 {
     color: white;
 }
 
-.image-container {
-    text-align: center;
+.image-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    max-width: 600px;
 }
 
 .cyoa-link {
     text-align: center;
-    margin-top: 50px;
+    margin: 50px;
 }
 
 .cyoa-link a {
