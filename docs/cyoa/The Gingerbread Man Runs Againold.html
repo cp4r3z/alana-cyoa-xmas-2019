@@ -14,8 +14,7 @@
 
 <tw-storydata name="The Gingerbread Man Runs Again" startnode="20" creator="Twine" creator-version="2.3.5" ifid="2ADC7E50-18D0-41E7-904D-1992DEDC4614" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body, tw-story
 {
-  xbackground-color: #3F044D;
-  background-color: black;
+  background-color: #3F044D;
   color: #BAFF59;
   font-family: "Comic Sans MS";
 }
@@ -25,13 +24,9 @@ tw-passage
   
 }
 
-img.passage-start {
-  width: auto;
-  height: 256px;
-}
-
 tw-story[tags~="greeting"] {
-  background-color: #31333D;
+  background: rgb(42,150,73);
+background: linear-gradient(41deg, rgba(42,150,73,1) 25%, rgba(53,69,69,1) 50%, rgba(200,45,65,1) 78%);
   color: white;
 }
 
@@ -43,9 +38,7 @@ tw-story[tags~="bad"] {
 tw-story[tags~="good"] {
   background-color: darkgreen;
   color: white;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="bad" color="red"></tw-tag>,<tw-tag name="TODO" color="yellow"></tw-tag>,<tw-tag name="Happy" color="green"></tw-tag>,<tw-tag name="good" color="green"></tw-tag><tw-passagedata pid="1" name="Introduction" tags="Shared" position="500,100" size="100,100">&lt;img src=&quot;https://xmas-2019.parez.info/images/charles_flake_01.jpg&quot; class=&quot;passage-start&quot;&gt;&lt;/img&gt;
-
-The day is finally here. The family comes to the Schanz house to make Christmas cookies.
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="bad" color="red"></tw-tag>,<tw-tag name="TODO" color="yellow"></tw-tag>,<tw-tag name="Happy" color="green"></tw-tag>,<tw-tag name="good" color="green"></tw-tag><tw-passagedata pid="1" name="Introduction" tags="Shared" position="500,100" size="100,100">The day is finally here. The family comes to the Schanz house to make Christmas cookies.
 
 It&#39;s time to make gingerbread cookies.
 
@@ -66,41 +59,42 @@ But your sister is making this difficult. &quot;Fine. I&#39;ll help you. But I&#
 [[&quot;Fine, grab some gumdrops&quot;|SnackGumdrop]]
 [[&quot;Oh come on sis! We&#39;re going to have cookies and lemon merengue pie later anyways!&quot;|SnackNothing]]
 
-(set: $helper to &quot;Carina&quot;)</tw-passagedata><tw-passagedata pid="4" name="Choose a Helper" tags="" position="850,350" size="100,100">Who do you call for help?
+(set: $helper to &quot;Carina&quot;)</tw-passagedata><tw-passagedata pid="4" name="Choose a Helper" tags="" position="843,353.5" size="100,100">Who do you call for help?
 
 [[Mom|HelpMom]]
 [[Dad|HelpDad]]
 [[Aunt Carla|HelpCarla]]
 [[Aunt Angie|HelpAngie]]
 [[Uncle Jason|HelpJason]]</tw-passagedata><tw-passagedata pid="5" name="HelpMom" tags="" position="650,650" size="100,100">(set: $helper to &quot;Mom&quot;) 
-&lt;img src=&quot;https://xmas-2019.parez.info/images/charles_flake_02b.jpg&quot; class=&quot;passage-start&quot;&gt;&lt;/img&gt;
+
 You have chosen $helper as your helper!
 
 &quot;Let&#39;s go get &#39;em, honey!&quot;
 
 [[Start the Chase]]
 [[Choose a Helper&lt;-Change your mind...]]</tw-passagedata><tw-passagedata pid="6" name="HelpDad" tags="" position="775,650" size="100,100">(set: $helper to &quot;Dad&quot;) 
+
 You have chosen $helper as your helper!
 
 &quot;I&#39;m tired!&quot;
 
 [[But Daaad!]]
 [[Choose a Helper&lt;-Go find someone nice to help you...]]</tw-passagedata><tw-passagedata pid="7" name="HelpCarla" tags="" position="900,675" size="100,100">(set: $helper to &quot;Carla&quot;) 
-&lt;img src=&quot;https://xmas-2019.parez.info/images/charles_flake_03.jpg&quot; class=&quot;passage-start&quot;&gt;&lt;/img&gt;
+
 You have chosen $helper as your helper!
 
 &quot;Let&#39;s go get &#39;em, honey!&quot;
 
 [[Start the Chase]]
 [[Choose a Helper&lt;-Change your mind...]]</tw-passagedata><tw-passagedata pid="8" name="HelpAngie" tags="" position="1025,725" size="100,100">(set: $helper to &quot;Angie&quot;) 
-&lt;img src=&quot;https://xmas-2019.parez.info/images/charles_flake_04b.jpg&quot; class=&quot;passage-start&quot;&gt;&lt;/img&gt;
+
 You have chosen $helper as your helper!
 
 &quot;Let&#39;s go get &#39;em, honey!&quot;
 
 [[Start the Chase]]
 [[Choose a Helper&lt;-Change your mind...]]</tw-passagedata><tw-passagedata pid="9" name="HelpJason" tags="" position="1150,725" size="100,100">(set: $helper to &quot;Jason&quot;) 
-&lt;img src=&quot;https://xmas-2019.parez.info/images/charles_flake_05.jpg&quot; class=&quot;passage-start&quot;&gt;&lt;/img&gt;
+
 You have chosen $helper as your helper!
 
 &quot;We could lure &#39;m with candy...&quot;
@@ -134,7 +128,7 @@ Your options are...
 
 [[Start the Chase]] </tw-passagedata><tw-passagedata pid="14" name="SnackNothing" tags="" position="625,500" size="100,100">&quot;You&#39;re the worst,&quot; Carina complains, &quot;but I&#39;ll still help you because I love you.&quot;
 
-[[Start the Chase]] </tw-passagedata><tw-passagedata pid="15" name="CallArgo" tags="bad" position="400,1100" size="100,100">Argo skitters into the room, unaware of the broken China. He scrapes his paw pad on the sharp shards. Blood flies everywhere. Argo, still excited, begins to eat the fallen flowers and dirt.
+[[Start the Chase]] </tw-passagedata><tw-passagedata pid="15" name="CallArgo" tags="bad" position="225,1075" size="100,100">Argo skitters into the room, unaware of the broken China. He scrapes his paw pad on the sharp shards. Blood flies everywhere. Argo, still excited, begins to eat the fallen flowers and dirt.
 
 &quot;Argo, NO!&quot; you scream.
 
@@ -201,21 +195,22 @@ The gingerbread boy has learned a new word, one he is keen to parrot down the dr
 
 [[work as a team to trap him]]
 
-[[scare him into another room]]</tw-passagedata><tw-passagedata pid="26" name="work as a team to trap him" tags="" position="500,1500" size="100,100">You and $helper run into the room serching for the gingerbread boy to trap him. He suddenly jumped out of nowhere and jumped out the window oh no!
+[[scare him into another room]]</tw-passagedata><tw-passagedata pid="26" name="work as a team to trap him" tags="" position="500,1500" size="100,100">You and $helper run into the room serching for the gingerbread boy. He suddenly jumped out of nowhere and jumped out the window oh no!
 
 [[give up]]
 [[Jump after him]]</tw-passagedata><tw-passagedata pid="27" name="scare him into another room" tags="" position="700,1700" size="100,100">You and $helper start making a plan to scare the gingerbread boy into another room using...
 
 [[... a trick|Trick]]
 [[... a scary story|Scary Story]]
-[[... the computer|Drop Computer]]</tw-passagedata><tw-passagedata pid="28" name="Scary Story" tags="" position="500,1950" size="100,100">$helper starts telling the story of the Evil Elf on the Shelf.
+[[... the computer|Drop Computer]]</tw-passagedata><tw-passagedata pid="28" name="Scary Story" tags="" position="600,1900" size="100,100">$helper starts telling the story of the Evil Elf on the Shelf.
 
-&quot;I once heard a rumor that this house is not like the other houses. It&#39;s old. See, there was an Elf on the Shelf that lived here once, but it never moved. It sat in a corner with it&#39;s head tilted to the side with it&#39;s **cold,dead** eyes. It sat in that corner all day long. On Christmas, apparently the letters never got sent to Santa. The Elf on the Shelf was probably sending bad news. But he wasn&#39;t. You set up cameras but the Elf of the Shelf didn&#39;t move. It sat there with it&#39;s deep blue eyes and stared. One day the Elf on the Shelf just disappeared. Nobody knows where he went. But my guess... is that he still roams this house at Christmastime. Hungry. Still watching and waiting for the perfect time to eat a young gingerbread cookie!!!&quot;
+&quot;I once heard a rumor that this house is not like the other houses. It&#39;s old. See, there was an Elf on the Shelf that lived here once, but it never moved. It sat in a corner with it&#39;s head tilted to the side. It sat in that corner all day long. On Christmas, apparently the letters never got sent to Santa. The Elf on the Shelf was probably sending bad news. But he wasn&#39;t. You set up cameras but the Elf of the Shelf didn&#39;t move. It sat there with it&#39;s deep blue eyes and stared. One day the Elf on the Shelf just disappeared. Nobody knows where he went. But my guess... is that he still roams this house at Christmastime. Hungry. Still watching and waiting for the perfect time to eat a young gingerbread cookie!!!&quot;
 
 The gingerbread boy freaks out when he hears this and bounds into the sewing room.
 
-[[slam the door and trap him|work as a team to trap him]]
-[[chase him into the sewing room]]</tw-passagedata><tw-passagedata pid="29" name="Drop Computer" tags="bad" position="650,1900" size="100,100">ha ha! you and $helper have thought up the trickiest plan ever!
+[[slam the door and trap him]]
+[[find a doll and scare him into a trap]]
+[[chase him into the sewing room]]</tw-passagedata><tw-passagedata pid="29" name="Drop Computer" tags="bad" position="400,1800" size="100,100">ha ha! you and $helper have thought up the trickiest plan ever!
 
 &quot;Hey! Gingerbread! I&#39;ve had enough of your tricks!&quot; you suddenly scream,
 &quot;in fact,I&#39;m going to drop the computer on you!&quot; you wink at your sister.
@@ -226,15 +221,7 @@ The gingerbread boy freaks out when he hears this and bounds into the sewing roo
 &quot;Girls, there is far more to do than try to out smart me. It&#39;s not going to happen.&quot;
 
 The gingerbread boy then walked out of the room and added,&quot;besides I&#39;m the gingerbread boy,you&#39;ll never catch me.&quot;
-You are so angry that you drop the computer and it shatters across the floor.</tw-passagedata><tw-passagedata pid="30" name="Trick" tags="bad" position="800,1900" size="100,100">&quot;Oh gingerbread boy!&quot; you taunt. &quot;You know maybe I don&#39;t want to hurt you. Maybe I want to eat you.&quot;
-
-&quot;Do you like silverwear?&quot; you ask him. &quot;No. n- n- no no.&quot; he stammers.
-&quot;Well maybe $helper is out there waiting and I&#39;ll chase you with it.&quot;
-
-&quot;Oh please!&quot; screamed the gingerbread boy.
-He ran into the vents and swore to get nibbled up by mice and haunt the house forever.
-
-Some silent nights on sleepovers at grandma&#39;s house you can still hear great granma Manke&#39;s fancy china crashing, and the gingerbread boy taunting &quot;run run as fast as you can for you&#39;ll never catch me I&#39;m the gingerbread **ghost!**&quot; </tw-passagedata><tw-passagedata pid="31" name="Jump after him" tags="bad" position="400,1700" size="100,100">&quot;Jump!&quot; you yell at $helper.
+You are so angry that you drop the computer and it shatters across the floor.</tw-passagedata><tw-passagedata pid="30" name="Trick" tags="TODO" position="800,1900" size="100,100"></tw-passagedata><tw-passagedata pid="31" name="Jump after him" tags="bad" position="300,1600" size="100,100">&quot;Jump!&quot; you yell at $helper.
 
 For some reason, $helper decides to listen to you and jumps... through a window.
 
@@ -242,29 +229,7 @@ Twenty minutes later, $helper wakes up in the hospital.
 
 Twenty days later, you go to juvie. The pizza there is horrible, but it&#39;s also rock hard. You use it to smash a window and try to jump to freedom.
 
-Twenty minutes later, you wake up in a hospital.</tw-passagedata><tw-passagedata pid="32" name="chase him into the sewing room" tags="TODO" position="750,2050" size="100,100">You decide that you&#39;ve had enough of this gingerbread boy. He has made this Christmas awful!
-
-You grab one of grandma&#39;s sewing needles and chase him out of the room trying to stab him.
-
-Eventually you give up. But, you put the sewing needle in your pocket saying to $helper &quot;we might use this later...&quot;
-
-(if: $gumdrop is 1)[[Make a lure with your gumdrop]]
-(if: $gumdrop is 0)[[But first, we need a snack!]]</tw-passagedata><tw-passagedata pid="33" name="Make a lure with your gumdrop" tags="good" position="750,2200" size="100,100">$helper gasps! &quot;You have that sewing needle we picked up in the sewing room...&quot;
-
-You gasp too! &quot;That is genius! We could lure him into the oven using the gumdrop as bait...&quot;
-
-&quot;No! He&#39;s just a baby! We can&#39;t hurt him. Let&#39;s make a house for him and a sack out of fondant with candies inside and then label it &quot;FOOD&quot;.
-
-The gingerbread boy sees this and says &quot;A gumdrop! I love those!&quot; and leeps for it. 
-
-&quot;Yes! It worked!&quot; you both say.
-
-The gingerbread boy lives in a gingerbread house happily ever after.
-
-You and $helper are so proud of yourselves that you make a gingerbread boy every year. Of course, not one that breaks China.</tw-passagedata><tw-passagedata pid="34" name="But first, we need a snack!" tags="" position="275,2100" size="100,100">OK, so what should we grab for a snack?
-
-[[Some Hersey&#39;s kisses?|SnackKisses]]
-[[Gumdrops?|SnackGumdrop]]</tw-passagedata></tw-storydata>
+Twenty minutes later, you wake up in a hospital.</tw-passagedata><tw-passagedata pid="32" name="slam the door and trap him" tags="TODO" position="450,2050" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="33" name="find a doll and scare him into a trap" tags="TODO" position="600,2050" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="34" name="chase him into the sewing room" tags="TODO" position="750,2050" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
